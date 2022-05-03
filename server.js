@@ -9,7 +9,10 @@ app.use(express.json())
 app.set("views",index_path)
 app.set("view engine","ejs")
 app.get("/:name",(req,res)=>{
-   res.render("index")
+    let name = req.params.name
+   res.render("index",{
+       name
+   })
 })
 app.post("/show",(req,res)=>{
     console.log( req.body.name)
