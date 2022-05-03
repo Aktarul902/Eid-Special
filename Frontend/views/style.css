@@ -1,0 +1,80 @@
+#moon{
+    position: absolute;
+    right: -35px;
+    /* width: 86px; */
+}
+.gate_2{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 101vh;
+    top: -49px;
+}
+.gate_1{
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 95vh;
+}
+.slide{
+    animation: slide 2s ease-in-out 1  ;
+
+}
+ 
+
+@keyframes slide {
+    0%{
+        width: 50%;
+    }
+    40%{
+        width: 30%;
+    }
+    80%{
+        width: 10%;
+    }
+    100%{
+        width: 0%;
+        /* display: none; */
+    }
+}
+h1 {
+    animation: glow 10s ease-in-out infinite;
+}
+h1 {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    font: 900 10em 'Concert One', sans-serif;
+    position: absolute;
+    color: #fff;
+}
+@keyframes glow {
+    0%,
+    100% {
+        text-shadow: 0 0 30px red;
+    }
+    25% {
+        text-shadow: 0 0 30px blue;
+    }
+    50% {
+        text-shadow: 0 0 30px red;
+    }
+    75% {
+        text-shadow: 0 0 30px blue;
+    }
+}
+h1:nth-child(2) {
+    transform: translateZ(5px);
+}
+
+h1:nth-child(3) {
+    transform: translateZ(10px);
+}
+
+h1:nth-child(4) {
+    transform: translateZ(15px);
+}
+
+h1:nth-child(5) {
+    transform: translateZ(20px);
+}
