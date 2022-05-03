@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.set("views",index_path)
 app.set("view engine","ejs")
-app.get("/:name",(req,res)=>{
+app.get("/user/:name",(req,res)=>{
     let name = req.params.name
    res.render("index",{
        name
